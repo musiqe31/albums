@@ -1,0 +1,24 @@
+.soloAlbum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+}
+
+.btn{
+    margin: 10px;
+}
+
+
+.addorremove{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
