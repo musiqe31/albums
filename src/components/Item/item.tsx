@@ -21,10 +21,10 @@ const Item = ({ album, onCartPressAdd, onCartPressRemove }: Props) => {
   return (
     <div className='soloAlbum' style={{borderColor:inCart.includes(title) ? 'lightgreen' : 'black'}}>
       <p>{id}</p>
-      <p>{Capitalize(title)}</p>
+      <p data-testid='title'>{Capitalize(title)}</p>
       <div className='addorremove'>
-        <button disabled={inCart.includes(title) ? true : false} onClick={()=>onCartPressAdd(title)} style={{fontSize:'30px'}}>✅</button>
-        <button disabled={!inCart.includes(title) ? true : false} onClick={()=>onCartPressRemove(title)}  style={{fontSize:'30px'}}>❌</button>
+        <button data-testid='add' disabled={inCart.includes(title) ? true : false} onClick={()=>onCartPressAdd(title)} style={{fontSize:'30px'}}>✅</button>
+        <button data-testid='remove' disabled={!inCart.includes(title) ? true : false} onClick={()=>onCartPressRemove(title)}  style={{fontSize:'30px'}}>❌</button>
       </div>
     </div>
   )
